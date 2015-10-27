@@ -11,8 +11,14 @@ module I18ndiff
     old_yml_str = YAML.load_file(old_file)
     new_yml_str = YAML.load_file(new_file)
     new_hash = {}
-    compare_hash(new_yml_str, old_yml_str, new_hash)
-    new_hash.to_yaml
+    begin
+      compare_hash(new_yml_str, old_yml_str, new_hash)
+      new_hash.to_yaml
+    rescue NoMethodError => e
+      puts "Sorry there appears to be a problem\n"
+      puts "The error reported is: \n"
+      puts e
+    end
   end
 
   def self.compare_hash(new_yaml, old_yaml, new_hash, context = [])
