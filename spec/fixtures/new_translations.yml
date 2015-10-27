@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    messages:
+      thing: "this is a made up thing"
+    errors:
+      not_found: "is not found!"
+      cant_be_blank: "can't be blank!"
+  welcome: "Welcome to this site"
+  login: "Please login"
+  register: "Please register"
+  logout: "Logout"

@@ -1,0 +1,7 @@
+---
+en:
+  activerecord:
+    messages:
+      thing: this is a made up thing
+  register: Please register
+  logout: Logout
