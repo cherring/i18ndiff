@@ -1,38 +1,26 @@
 # I18ndiff
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/i18ndiff`. To experiment with that code, run `bin/console` for an interactive prompt.
+A simple gem that can output the difference between two yaml files, used by me to get the new stuff I needed to be translated for a Ruby on Rails application
 
 TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'i18ndiff'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it:
 
     $ gem install i18ndiff
 
 ## Usage
 
-TODO: Write usage instructions here
+To use from the command is very simple, you just need an old version of your translations yml file, and the one with new parts to be translated, then run them:
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+i18ndiff /path/to/older/file.yml /path/to/newer/file.yml
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/i18ndiff. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cherring/i18ndiff. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
