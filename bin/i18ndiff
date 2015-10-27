@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'i18ndiff'
+
+old_file = ARGV[0]
+new_file = ARGV[1]
+
+puts I18ndiff.convert(old_file, new_file)

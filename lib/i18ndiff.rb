@@ -3,9 +3,7 @@ require "yaml"
 
 module I18ndiff
 
-  def self.convert(*args)
-    @old_file = args[0]
-    @new_file = args[1]
+  def self.convert(old_file, new_file)
     compare_files(old_file, new_file)
   end
 
@@ -41,14 +39,6 @@ module I18ndiff
         next
       end
     end
-  end
-
-  def self.old_file
-    @old_file
-  end
-
-  def self.new_file
-    @new_file
   end
 
 end
